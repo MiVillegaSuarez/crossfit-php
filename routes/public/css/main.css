@@ -1,0 +1,619 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* ----- Estilos Selectores De Elementos ----- */
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PFDin';
+    src: url('../assets/fonts/PFDinTextCompPro-Medium.ttf') format('truetype');
+}
+
+/* ----- Estilos Selectores De Clases ----- */
+
+/* Clases generales */
+
+
+/* Clases de header */
+.seccion-header {
+    height: 122px;
+    background-color: #000;
+    color: #fff;
+    font-size: 35px;
+    position: fixed;
+    z-index: 100;
+}
+
+.sec-header-brand {
+    border-right: 1px solid #333;
+    text-align: center;
+}
+
+.sec-header-advert-bar {
+    color: #8e8e93;
+    text-align: end;
+    margin-right: 10vw;
+}
+
+.sec-header-advert-bar p {
+    padding: 15px 50px 0 0;
+    font-size: 12px;
+}
+
+.sec-header-menu {
+    display: inline;
+    border-top: 1px solid #333;
+}
+
+.sec-header-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sec-header-menu ul li {
+    display: inline-block;
+}
+
+.sec-header-menu ul li a {
+    display: block;
+    font-family: PFDin;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 10px;
+}
+
+.sec-header-menu ul li a:hover {
+    color: #333;
+}
+
+.sec-header-settings {
+    border-top: 1px solid #333;
+}
+
+/* Clases de footer */
+.seccion-footer {
+    margin: 0 160px;
+    padding: 122px 0 24px;
+}
+
+.sec-footer-menu h6 {
+    font-family: PFDin;
+    font-size: 18px;
+}
+
+.sec-footer-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sec-footer-menu ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+.sec-footer-subscribe h6 {
+    font-family: PFDin;
+    font-size: 18px;
+}
+
+/* Clases de copyright */
+.sec-copyright-text p{
+    font-size: 12px;
+    padding: 30px 0 10px 0;
+}
+
+.sec-copyright-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sec-copyright-menu ul li {
+    display: inline-block;
+}
+
+.sec-copyright-menu ul li a {
+    color: #000;
+    font-size: 12px;
+    display: block;
+    padding: 20px 30px 60px 0;
+    text-decoration: none;
+}
+
+.sec-copyright-social {
+    padding: 20px 30px 60px 0;
+}
+
+.sec-copyright-social span {
+    padding-left: 20px;
+}
+
+.sec-copyright-social span a i {
+    color: #000;
+}
+
+/* ----- Estilos Selectores De Identificacion ----- */
+
+
+/* ----- Estilos Selectores De PseudoElementos y PseudoClases ----- */
+
+
+
+/*
+|-------------------------------|
+|              HOME             |
+|-------------------------------|
+*/
+
+/* ----- Home - Seccion 01 ----- */
+.home-seccion-01 {
+    height: 798px;
+    width: 100vw;
+    top: 122px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../assets/images/e4pca670je9wp9zm6vie.jpg");
+    padding: 10% 35% 0 17%;
+    position: relative;
+}
+
+.home-sec-01-cover {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: rgba(26, 26, 26, 0.6);
+}
+
+.home-sec-01-advert {
+    z-index: 1;
+}
+
+.home-sec-01-text-1 {
+    padding-bottom: 20px;
+}
+.home-sec-01-text-1 h2 {
+    color: #fff;
+    font-family: PFDin;
+    font-size: 96px;
+}
+
+.home-sec-01-text-1 span {
+    color: #fff;
+    font-size: 20px;
+}
+
+.home-sec-01-search {
+    margin-top: 50px;
+    position: relative;
+    width: 271px;
+}
+
+.home-sec-01-search input {
+    width: 350px;
+    height: 46px;
+    border-radius: 20px;
+    border: 1px #000 solid;
+    box-sizing: border-box;
+    color: #191919;
+    padding: 15px 15px 15px 35px;
+}
+
+.home-sec-01-search svg{
+    color: #191919;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.home-sec-01-text-2 {
+    margin-top: 50px;
+}
+
+.home-sec-01-text-2 span {
+    color: #fff;
+    font-size: 16px;
+}
+
+.home-sec-01-text-2 span:first-child {
+    font-size: 12px;
+}
+
+.home-sec-01-text-2 span:last-child {
+    text-decoration: underline;
+}
+
+.home-sec-01-link {
+    margin-top: 25px;
+}
+
+.home-sec-01-link span a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* ----- Home - Seccion 02 ----- */
+.home-seccion-02 {
+    padding: 172px 0 50px;
+}
+
+.home-sec-02-title {
+    padding-bottom: 25px;
+}
+
+.home-sec-02-title h2 {
+    font-family: PFDin;
+    font-size: 36px;
+}
+
+.home-sec-02-link {
+    text-align: end;
+}
+
+.home-sec-02-link span a {
+    height: 100%;
+    vertical-align: middle;
+    color: #000;
+    text-decoration: none;
+}
+
+.home-sec-02-card .card {
+    height: 510px;
+}
+
+.home-sec-02-card img {
+    max-height: 198px;
+    object-fit: cover;
+}
+
+.home-sec-02-card h5 {
+    font-size: 28px;
+    font-family: PFDin;
+}
+
+.home-sec-02-card p {
+    font-weight: 300;
+}
+
+.home-sec-02-card span a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* ----- Home - Seccion 03 ----- */
+.home-seccion-03 {
+    height: 798px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../assets/images/a575fkycnvmc87xb8tma.jpg");
+    padding: 10% 35% 0 17%;
+    position: relative;
+}
+
+.home-sec-03-cover {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: rgba(26, 26, 26, 0.6);
+}
+
+.home-sec-03-advert {
+    z-index: 1;
+}
+
+.home-sec-03-advert h2 {
+    color: #fff;
+    font-family: PFDin;
+    font-size: 96px;
+}
+
+.home-sec-03-advert p {
+    color: #fff;
+    font-size: 16px;
+}
+
+.home-sec-03-btn {
+    padding-top: 50px;
+}
+
+.home-sec-03-btn span a {
+    color: #fff;
+    font-family: PFDin;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.home-sec-03-btn-1 {
+    background-color: #075dc6;
+    padding: 16px 40px 14px;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.home-sec-03-btn-1:hover {
+    background-color: #3f88c5;
+}
+
+.home-sec-03-btn-2 {
+    padding: 16px 40px 14px;
+    border: 2px #fff solid;
+    border-radius: 200px;
+}
+
+.home-sec-03-btn-2:hover {
+    background-color: #333;
+    border: 0 #fff solid;
+}
+
+/* ----- Home - Seccion 04 ----- */
+.home-seccion-04 {
+    padding: 50px 0;
+}
+
+.home-sec-04-title {
+    padding-bottom: 25px;
+}
+
+.home-sec-04-title h2 {
+    font-family: PFDin;
+    font-size: 36px;
+}
+
+.home-sec-04-link {
+    text-align: end;
+}
+
+.home-sec-04-link span a {
+    height: 100%;
+    vertical-align: middle;
+    color: #000;
+    text-decoration: none;
+}
+
+.home-sec-04-card .card {
+    height: 510px;
+}
+
+.home-sec-04-card img {
+    max-height: 198px;
+    object-fit: cover;
+}
+
+.home-sec-04-card h5 {
+    font-size: 28px;
+    font-family: PFDin;
+}
+
+.home-sec-04-card p {
+    font-weight: 300;
+}
+
+.home-sec-04-card span a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* ----- Home - Seccion 05 ----- */
+.home-seccion-05 {
+    height: 798px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../assets/images/2u7dy593ejcbzvqo6v47.jpg");
+    padding-top: 15%;
+    position: relative;
+}
+
+.home-sec-05-cover {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: rgba(26, 26, 26, 0.6);
+}
+
+.home-sec-05-advert {
+    z-index: 1;
+}
+
+.home-sec-05-advert h2 {
+    color: #fff;
+    font-family: PFDin;
+    font-size: 56px;
+    text-align: center;
+}
+
+.home-sec-05-advert p {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    padding: 0 50px;
+}
+
+.home-sec-05-bnt {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.home-sec-05-bnt a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: #075dc6;
+    padding: 16px 40px 14px;
+    border-radius: 25px;
+    margin-right: 20px;
+}
+
+.home-sec-05-bnt a:hover {
+    background-color: #3f88c5;
+}
+
+/* ----- Home - Seccion 06 ----- */
+.home-seccion-06 {
+    background-color: #eee;
+}
+
+
+
+/*
+|--------------------------------|
+|              LOGIN             |
+|--------------------------------|
+*/
+
+/* ----- Login - Seccion 01 ----- */
+.login-seccion-01 {
+    width: 27%;
+    margin-top: 10px;
+    padding: 50px 50px;
+    background-color: #fff;
+}
+
+.login-sec-01-logo {
+    text-align: center;
+    padding: 30px;
+}
+
+.login-sec-01-logo svg {
+    display: inline-block;
+}
+
+.login-sec-01-title h2 {
+    font-family: PFDin;
+    font-size: 40px;
+} 
+
+.login-sec-01-forgot {
+    text-align: end;
+}
+
+.login-sec-01-forgot a {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.login-sec-01-btn button {
+    font-family: PFDin;
+    font-size: 18px;
+}
+
+.login-sec-01-register {
+    margin-top: 50px;
+}
+
+.login-sec-01-register a {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+
+/*
+|-------------------------------|
+|        FORGOT PASSWORD        |
+|-------------------------------|
+*/
+
+/* ----- Forgot - Seccion 01 ----- */
+.forgot-seccion-01 {
+    width: 27%;
+    margin-top: 10px;
+    padding: 50px 50px;
+    background-color: #fff;
+}
+
+.forgot-sec-01-logo {
+    text-align: center;
+    padding: 30px;
+}
+
+.forgot-sec-01-logo svg {
+    display: inline-block;
+}
+
+.forgot-sec-01-title h2 {
+    font-family: PFDin;
+    font-size: 40px;
+} 
+
+.forgot-sec-01-btn button {
+    font-family: PFDin;
+    font-size: 18px;
+}
+
+
+
+/*
+|-------------------------------|
+|        CREATE ACCOUNT         |
+|-------------------------------|
+*/
+
+/* ----- Create - Seccion 01 ----- */
+.create-seccion-01 {
+    width: 27%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 50px 50px;
+    background-color: #fff;
+}
+
+.create-sec-01-logo {
+    text-align: center;
+    padding: 30px;
+}
+
+.create-sec-01-logo svg {
+    display: inline-block;
+}
+
+.create-sec-01-title h2 {
+    font-family: PFDin;
+    font-size: 40px;
+} 
+
+.create-sec-01-check span {
+    color: #075dc6;
+}
+
+.create-sec-01-btn button {
+    font-family: PFDin;
+    font-size: 18px;
+}
+
+.create-sec-01-login {
+    margin-top: 50px;
+}
+
+.create-sec-01-login a {
+    text-decoration: none;
+    font-weight: 700;
+}
