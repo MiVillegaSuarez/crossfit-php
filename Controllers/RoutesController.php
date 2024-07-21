@@ -27,8 +27,6 @@ class RoutesController {
             
             if(preg_match("#^$route$#", $uri, $matches)) {
                 $params = array_slice($matches, 1);
-                // echo json_encode($params);
-                // $response = $callback(...$params);
 
                 if(is_callable($callback)) {
                     $response = $callback(...$params);
@@ -46,14 +44,8 @@ class RoutesController {
                     echo $response;
                 }
 
-                // echo $response;
                 return;
             }
-                        
-            // if($route == $uri) {
-            //     $callback();
-            //     return;
-            // }  
         }
 
         echo '404 Not Found';

@@ -59,12 +59,6 @@ class Model {
         return $this->query($sql)->get();
     }
 
-    public function emails() {
-        // SELECT 'email' FROM cf_users
-        $sql = "SELECT email FROM {$this->table}";
-        return $this->query($sql)->get();
-    }
-
     public function find($id) {
         // SELECT * FROM cf_users WHERE id = 1
         $sql = "SELECT * FROM {$this->table} WHERE id_user = ?";

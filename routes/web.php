@@ -22,5 +22,6 @@ RoutesController::getRoute('/home/post/:slug', function($slug) {
 
 //Rutas especiales
 RoutesController::postRoute('/login-validation', [LoginController::class, 'loginValidation']);
+RoutesController::postRoute('/create-account-validation', [CreateAccountController::class, 'createValidation']);
 
 RoutesController::dispatch();

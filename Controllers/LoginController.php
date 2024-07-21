@@ -30,9 +30,31 @@ class LoginController extends Controller {
         // ]);
         // $usersModel->delete(3);
         
-        return $this->view('login', [
-            'title' => 'Login | El Camino Hacia Una Mejor Salud'
-        ]);
+
+
+        if(!empty($_COOKIE["email_user_login"])) {
+            $cookieValue = $_COOKIE["email_user_login"];
+            
+            $usersModel = new UsersModel();
+            $dataQuery = $usersModel->where('email', '=', $cookieValue)->first();
+            $emailUser = $dataQuery["email"];
+            
+            if(!empty($emailUser)) {
+                $this->loguear($dataQuery);
+            } else {
+                unset($_SESSION["email_user"]);
+                unset($_SESSION["name_user"]);
+                unset($_COOKIE["email_user_login"]);
+                session_destroy();
+                setcookie('email_user_login', null, -1); 
+                
+                header("Location: /");
+            }
+        } else {
+            return $this->view('login', [
+                'title' => 'Login | El Camino Hacia Una Mejor Salud'
+            ]);
+        }
     }
 
     public function loginValidation() {        
@@ -48,13 +70,8 @@ class LoginController extends Controller {
             if($usersModel->where('email', '=', $emailForm)->first()) {
                 if($usersModel->where('password', '=', md5($passForm))->first()) {
                     $dataQuery = $usersModel->where('email', '=', $emailForm)->first();
-                    $emailUser = $dataQuery["email"];
-                    $nameUser = $dataQuery["first_name"];
-
-                    $_SESSION["email_user"] = $emailUser;
-                    $_SESSION["name_user"] = $nameUser;
                     
-                    header("Location: home");
+                    $this->loguear($dataQuery);
                 } else {
                     header("Location: /");
                     return;
@@ -69,10 +86,16 @@ class LoginController extends Controller {
         }
     }
     
+    protected function loguear($data) {
+        $emailUser = $data["email"];
+        $nameUser = $data["first_name"];
 
+        $_SESSION["email_user"] = $emailUser;
+        $_SESSION["name_user"] = $nameUser;
 
-    private function getUser() {
-        $usersModel = new UsersModel();
-        return $usersModel->where('email', 'mivillegasuarez@gmail.com')->first();
+        $expiration = time()+60*60*24*30;
+        setcookie("email_user_login", $emailUser, $expiration);
+        
+        header("Location: /home");
     }
 }

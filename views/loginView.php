@@ -23,7 +23,6 @@
                                 <path d="m3765.7 701.12c-1.95 1.082-5.08 1.625-9.34 1.625h-6.58v-15.848h6.96c3.26 0 5.71.332 7.34.973 3.03 1.195 4.52 3.484 4.52 6.855 0 3.165-.97 5.313-2.9 6.395zm-8.33 6.898c5.44 0 9.41-.523 11.94-1.585 4.52-1.875 6.79-5.583 6.79-11.083 0-3.91-1.42-6.789-4.27-8.617-1.53-1-3.63-1.715-6.33-2.129 3.44-.539 5.94-1.976 7.52-4.293 1.58-2.308 2.37-4.578 2.37-6.781v-3.187c0-1.024.04-2.086.1-3.254.09-1.164.21-1.934.38-2.266l.29-.566h-7.22c-.04.148-.08.293-.11.461-.04.125-.08.293-.11.457l-.16 1.414v3.461c0 5.058-1.4 8.39-4.15 10.019-1.6.934-4.48 1.41-8.58 1.41h-6.05v-17.222h-7.74v43.761zm-23.47 2.227c-6.64-6.703-9.97-14.785-9.97-24.266 0-9.558 3.32-17.703 9.93-24.429 6.67-6.746 14.74-10.102 24.26-10.102s17.6 3.356 24.29 10.102c6.64 6.726 9.97 14.871 9.97 24.429 0 9.481-3.33 17.563-9.97 24.266-6.71 6.742-14.81 10.098-24.29 10.098-9.43 0-17.5-3.356-24.22-10.098zm52.47-52.512c-7.8-7.8-17.21-11.722-28.25-11.722s-20.42 3.922-28.17 11.722c-7.7 7.793-11.56 17.207-11.56 28.309 0 10.957 3.89 20.332 11.66 28.113 7.75 7.735 17.1 11.625 28.07 11.625 11.04 0 20.45-3.89 28.25-11.625 7.76-7.742 11.66-17.117 11.66-28.113 0-11.063-3.9-20.473-11.66-28.309" />
                             </g>
                         </svg>
-
                     </a>
                 </div>
             </div>
@@ -40,12 +39,12 @@
                 </div>
                 <form method="POST" action="/login-validation" class="login-sec-01-form">
                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email</label>
-                        <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <label class="form-label">Email</label>
+                        <input type="email" name="email" class="form-control" aria-describedby="emailHelp">
                         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                     </div>
                     <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <label class="form-label">Password</label>
                         <input type="password" name="password" class="form-control" id="exampleInputPassword1">
                         <div class="login-sec-01-forgot"><a href="/forgot-password">Forgot your password?</a></div>
                     </div>
