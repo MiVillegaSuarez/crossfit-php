@@ -20,4 +20,7 @@ RoutesController::getRoute('/home/post/:slug', function($slug) {
     return 'Hola post: ' . $slug;
 });
 
+//Rutas especiales
+RoutesController::postRoute('/login-validation', [LoginController::class, 'loginValidation']);
+
 RoutesController::dispatch();

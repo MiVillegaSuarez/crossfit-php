@@ -2,7 +2,7 @@
         <nav class="container-fluid seccion-header"> 
                 <div class="row">
                 <div class="col-2 sec-header-brand">
-                    <a href="#">
+                    <a href="/">
                         <img src="routes/public/assets/images/354fleob5cddo2qpxpyg.png" alt="CrossFit">
                     </a>
                 </div>

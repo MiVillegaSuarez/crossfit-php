@@ -1,34 +1,15 @@
 <!DOCTYPE html>
 <html lang="es-co">
-<head>
-    <!-- Metadatos -->
-    <meta charset="UTF-8">
-    <meta name="author" content="Miguel Villegas Suarez">
-    <meta name="description" content="Sitio web replicado de https://crossfit.com">
-    <meta name="keywords" content="Crossfit, Deporte, Ejerccio, Salud, Articulos deportivos, Entrenamiento">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Titulo -->
-    <title>Recuperar Contraseña | El Camino Hacia Una Mejor Salud</title>
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/w6qc21us429c5rtbdy54.webp">
-
-    <!-- Bootstrap css -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
-
-    <!-- Custom css -->
-    <link rel="stylesheet" href="routes/public/css/main.css">
-</head>
+<?php
+    include "views/template/head.php";    
+?>
 <body style="background-color: #f2f2f2;">
     <!-- Inicio Seccion - Header -->
     <header>
         <nav class="container-fluid"> 
                 <div class="row">
                 <div class="col-12 forgot-sec-01-logo">
-                    <a href="#">
+                    <a href="/">
                         <svg viewBox="0 0 506.39999 132.69333" width="240px" xmlns="http://www.w3.org/2000/svg">
                             <g fill="#1b1918" transform="matrix(.13333 0 0 -.13333 0 132.69)">
                                 <path d="m260.13 0c-155.38 0-260.13 103.14-260.13 200.25v594.71c0 97.129 104.75 200.24 260.13 200.24 153.06 0 253.22-103.11 253.22-200.24v-184.65h-209.48v155.88c0 25.168-19.574 40.766-43.742 40.766-26.488 0-46.039-15.598-46.039-40.766v-537.14c0-25.196 19.551-40.801 46.039-40.801 24.168 0 43.742 15.605 43.742 40.801v155.82h209.48v-184.62c0-97.117-100.16-200.25-253.22-200.25" />
