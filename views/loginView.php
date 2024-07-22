@@ -45,12 +45,12 @@
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Password</label>
-                        <input type="password" name="password" class="form-control" id="exampleInputPassword1">
+                        <input type="password" name="password" class="form-control">
                         <div class="login-sec-01-forgot"><a href="/forgot-password">Forgot your password?</a></div>
                     </div>
                     <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Keep me logged in.</label>
+                        <input type="checkbox" name="logged-in" class="form-check-input" required>
+                        <label class="form-check-label">Keep me logged in.</label>
                     </div>
                     <div class="d-grid gap-2 login-sec-01-btn">
                         <button type="submit" class="btn btn-primary btn-lg">LOG IN</button>

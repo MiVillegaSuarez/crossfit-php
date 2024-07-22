@@ -63,12 +63,12 @@ class LoginController extends Controller {
 
     public function authenticateUser($data) {
         $emailForm = $data["email"];
-        $passForm = $data["password"];
+        $passForm = md5($data["password"]);
 
         if(isset($emailForm) && isset($passForm)) {
             $usersModel = new UsersModel();
             if($usersModel->where('email', '=', $emailForm)->first()) {
-                if($usersModel->where('password', '=', md5($passForm))->first()) {
+                if($usersModel->where('password', '=', $passForm)->first()) {
                     $dataQuery = $usersModel->where('email', '=', $emailForm)->first();
                     
                     $this->loguear($dataQuery);
@@ -92,7 +92,7 @@ class LoginController extends Controller {
 
         $_SESSION["email_user"] = $emailUser;
         $_SESSION["name_user"] = $nameUser;
-
+        
         $expiration = time()+60*60*24*30;
         setcookie("email_user_login", $emailUser, $expiration);
         

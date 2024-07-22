@@ -33,6 +33,8 @@
                             </ul>
                         </div>
                         <div class="col-4 sec-header-settings">
+                            <!-- <p>OPEN A CROSSFIT GYM</p> -->
+                            <span><a href="/logout-validation">CERRAR SESION</a></span>
                         </div>
                     </div>
                 </div>

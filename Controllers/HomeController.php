@@ -19,4 +19,14 @@ class HomeController extends Controller {
             'title' => 'CrossFit | El Camino Hacia Una Mejor Salud'
         ]);
     }
+
+    public function logoutUser() {
+        unset($_SESSION["email_user"]);
+        unset($_SESSION["name_user"]);
+        unset($_COOKIE["email_user_login"]);
+        session_destroy();
+        setcookie('email_user_login', null, -1); 
+        
+        header("Location: /");
+    }
 }

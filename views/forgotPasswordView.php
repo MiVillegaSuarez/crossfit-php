@@ -41,15 +41,18 @@
                 <div class="forgot-sec-01-text">
                     <p>Enter the email address associated with your CrossFit account.</p>
                 </div>
-                <form class="forgot-sec-01-form">
+                <form method="POST" action="/forgot-validation" class="forgot-sec-01-form">
                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <label class="form-label">Email</label>
+                        <input type="email" name="email" class="form-control" aria-describedby="emailHelp">
                     </div>
                     <div class="d-grid gap-2 forgot-sec-01-btn">
                         <button type="submit" class="btn btn-primary btn-lg">RESET PASSWORD</button>
                     </div>
                 </form>
+                <div class="forgot-sec-01-login">
+                    <span>Already have an account? </span><a href="/">Log In</a>
+                </div>
             </div>
         </div>
     </section>

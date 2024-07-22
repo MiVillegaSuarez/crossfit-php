@@ -76,7 +76,31 @@
 }
 
 .sec-header-settings {
+    display: inline;
     border-top: 1px solid #333;
+    text-align: end;
+}
+
+.sec-header-settings span {
+    display: inline-block;
+    background-color: #075dc6;
+    border-radius: 20px;
+    margin: 15px 45px 0 0;
+    padding: 0;
+}
+
+.sec-header-settings span a {
+    display: block;
+    padding: 10px 30px 10px;
+    color: #fff;
+    font-family: PFDin;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.sec-header-settings span a:hover {
+    background-color: #3f88c5;
+    border-radius: 20px;
 }
 
 /* Clases de footer */
@@ -570,6 +594,59 @@
 .forgot-sec-01-btn button {
     font-family: PFDin;
     font-size: 18px;
+}
+
+.forgot-sec-01-login {
+    margin-top: 50px;
+}
+
+.forgot-sec-01-login a {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+
+/*
+|-------------------------------|
+|        NEW PASSWORD        |
+|-------------------------------|
+*/
+
+/* ----- New PassWord - Seccion 01 ----- */
+.newpass-seccion-01 {
+    width: 27%;
+    margin-top: 10px;
+    padding: 50px 50px;
+    background-color: #fff;
+}
+
+.newpass-sec-01-logo {
+    text-align: center;
+    padding: 30px;
+}
+
+.newpass-sec-01-logo svg {
+    display: inline-block;
+}
+
+.newpass-sec-01-title h2 {
+    font-family: PFDin;
+    font-size: 40px;
+} 
+
+.newpass-sec-01-btn button {
+    font-family: PFDin;
+    font-size: 18px;
+}
+
+.newpass-sec-01-login {
+    margin-top: 50px;
+}
+
+.newpass-sec-01-login a {
+    text-decoration: none;
+    font-weight: 700;
 }
 
 
