@@ -31,6 +31,27 @@
     z-index: 100;
 }
 
+.sec-header-check {
+    position: absolute;
+}
+
+/* .sec-header-check input, .sec-header-check label {
+    float: right;
+} */
+
+.sec-header-checkbtn i {
+    font-size: 30px;
+    color: #fff;
+    /* float: right; */
+    line-height: 122px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
 .sec-header-brand {
     border-right: 1px solid #333;
     text-align: center;
@@ -209,7 +230,7 @@
 .home-sec-01-text-1 {
     padding-bottom: 20px;
 }
-.home-sec-01-text-1 h2 {
+.home-sec-01-text-1 p {
     color: #fff;
     font-family: PFDin;
     font-size: 96px;
@@ -502,9 +523,6 @@
     background-color: #eee;
 }
 
-@media (max-width: 767px) {
-    
-}
 
 
 /*
@@ -696,4 +714,137 @@
 .create-sec-01-login a {
     text-decoration: none;
     font-weight: 700;
+}
+
+
+
+/*
+|-------------------------------|
+|        DELETE ACCOUNT        |
+|-------------------------------|
+*/
+
+/* ----- Delete - Seccion 01 ----- */
+.delete-seccion-01 {
+    width: 27%;
+    margin-top: 10px;
+    padding: 50px 50px;
+    background-color: #fff;
+}
+
+.delete-sec-01-logo {
+    text-align: center;
+    padding: 30px;
+}
+
+.delete-sec-01-logo svg {
+    display: inline-block;
+}
+
+.delete-sec-01-title h2 {
+    font-family: PFDin;
+    font-size: 40px;
+} 
+
+.delete-sec-01-btn button {
+    font-family: PFDin;
+    font-size: 18px;
+}
+
+.delete-sec-01-login {
+    margin-top: 50px;
+}
+
+.delete-sec-01-login a {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+/* ----- Media Queries ----- */
+@media (max-width: 767px) {
+    
+    /* Queries Header */
+    .sec-header-checkbtn i {
+        display: block;
+    }
+
+    .sec-header-menu ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #000;
+        top: 122px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    .sec-header-menu ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    .sec-header-menu ul li a {
+        font-size: 20px;
+    }
+
+    .sec-header-menu ul li a:hover {
+        background: none;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+    /* Queries Home */
+    .home-seccion-01 {
+        padding: 10% 0 0 0;
+    }
+
+    .home-sec-01-text-1 p {
+        font-size: 56px;
+    }
+    
+    .home-seccion-02, .home-seccion-04 {
+        width: 92%;
+    }
+
+    .home-seccion-03 {
+        padding: 10% 0 0 0;
+    }
+
+    .home-sec-03-advert h2 {
+        font-size: 56px;
+    }
+
+    .home-seccion-05 {
+        padding: 10% 0 0 0;
+    }
+
+    /* Queries Login */
+    .login-seccion-01 {
+        width: 90%;
+    }
+
+    /* Queries Forgot */
+    .forgot-seccion-01 {
+        width: 90%;
+    }
+
+    /* Queries New Password */
+    .newpass-seccion-01 {
+        width: 90%;
+    }
+
+    /* Queries Create Password */
+    .create-seccion-01 {
+        width: 90%;
+    }
+
+    /* Queries Delete Account */
+    .delete-seccion-01 {
+        width: 90%;
+    }
 }

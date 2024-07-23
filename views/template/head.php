@@ -10,7 +10,7 @@
     <title><?= $title ?></title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/w6qc21us429c5rtbdy54.webp">
+    <link rel="shortcut icon" type="image/x-icon" href="routes/public/assets/images/3v1mqj57c0fu37cz9sop.png">
 
     <!-- Bootstrap css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"

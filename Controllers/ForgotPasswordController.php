@@ -8,7 +8,7 @@ class ForgotPasswordController extends Controller {
 
     public function forgotPassword() {
         
-        return $this->view('ForgotPassword', [
+        return $this->view('forgotPassword', [
             'title' => 'Recuperar Contraseña | El Camino Hacia Una Mejor Salud'
         ]);
     }

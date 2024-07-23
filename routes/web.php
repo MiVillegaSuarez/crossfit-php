@@ -4,6 +4,7 @@ use Controllers\RoutesController;
 use Controllers\CreateAccountController;
 use Controllers\ForgotPasswordController;
 use Controllers\NewPasswordController;
+use Controllers\deleteAccountController;
 use Controllers\HomeController;
 use Controllers\LoginController;
 
@@ -14,6 +15,8 @@ RoutesController::getRoute('/create-account', [CreateAccountController::class, '
 RoutesController::getRoute('/forgot-password', [ForgotPasswordController::class, 'forgotPassword']);
 
 RoutesController::getRoute('/new-password', [NewPasswordController::class, 'newPassword']);
+
+RoutesController::getRoute('/delete-account', [DeleteAccountController::class, 'deleteAccount']);
 
 RoutesController::getRoute('/home', [HomeController::class, 'home']);
 
@@ -29,6 +32,6 @@ RoutesController::postRoute('/create-account-validation', [CreateAccountControll
 RoutesController::getRoute('/logout-validation', [HomeController::class, 'logoutUser']);
 RoutesController::postRoute('/forgot-validation', [ForgotPasswordController::class, 'forgotValidation']);
 RoutesController::postRoute('/new-password-validation', [NewPasswordController::class, 'newPasswordValidation']);
-
+RoutesController::postRoute('/delete-account-validation', [DeleteAccountController::class, 'deleteAccountValidation']);
 
 RoutesController::dispatch();

@@ -25,12 +25,13 @@ class NewPasswordController extends Controller {
         
         $usersModel = new UsersModel();
         $dataQuery = $usersModel->where('email', $emailForm)->first();
+
         $idUser = $dataQuery["id_user"];
         $nameUser = $dataQuery["first_name"];
         $lastNameUser = $dataQuery["last_name"];
         $bithUser = $dataQuery["birth"];
         $emailUser = $dataQuery["email"];
-        
+
         $usersModel->update($idUser, [
             'first_name' => $nameUser,
             'last_name' => $lastNameUser,
@@ -38,7 +39,7 @@ class NewPasswordController extends Controller {
             'email' => $emailUser,
             'password' => $passForm
         ]);
-
+        
         unset($_SESSION["email_new_password"]);
         session_destroy();
         header("Location: /");

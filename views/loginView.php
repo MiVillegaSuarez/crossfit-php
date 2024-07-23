@@ -59,6 +59,9 @@
                 <div class="login-sec-01-register">
                     <span>New to CrossFit? </span><a href="/create-account">Create an Account</a>
                 </div>
+                <div class="login-sec-01-register">
+                    <span>I have an account </span><a href="/delete-account">Delete Account</a>
+                </div>
             </div>
         </div>
     </section>

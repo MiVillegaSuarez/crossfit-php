@@ -21,7 +21,19 @@
                     WORKOUTS TAILORED TO YOU
                 -->
                 <div class="home-sec-01-text-1">
-                    <h2>WORKOUTS TAILORED TO YOU</h2>
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <p class="d-block w-100">COMMUNITY-DRIVEN CULTURE</p>
+                            </div>
+                            <div class="carousel-item">
+                                <p class="d-block w-100">FITNESS THAT STICKS</p>
+                            </div>
+                            <div class="carousel-item">
+                                <p class="d-block w-100">WORKOUTS TAILORED TO YOU</p>
+                            </div>
+                        </div>
+                    </div>
                     <span>Find Gyms Near You</span>
                 </div>
                 <div class="home-sec-01-search">
@@ -181,5 +193,11 @@
         include __DIR__."/template/footer.php";    
     ?>
     <!-- Fin Seccion - Footer -->
+
+    <!-- Incio Seccion - Scripts -->
+    <?php
+        include __DIR__."/template/scripts.php";    
+    ?>
+    <!-- Fin Seccion - Scripts -->
 </body>
 </html>
